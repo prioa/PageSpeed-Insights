@@ -1,0 +1,209 @@
+##############################
+Leistung
+	 first-contentful-paint 10
+		 server-response-time
+		 render-blocking-resources
+		 redirects
+		 critical-request-chains
+		 uses-text-compression
+		 uses-rel-preconnect
+		 uses-rel-preload
+		 font-display
+		 unminified-javascript
+		 unminified-css
+		 unused-css-rules
+	 interactive 10
+	 speed-index 10
+	 total-blocking-time 30
+		 long-tasks
+		 third-party-summary
+		 third-party-facades
+		 bootup-time
+		 mainthread-work-breakdown
+		 dom-size
+		 duplicated-javascript
+		 legacy-javascript
+		 viewport
+	 largest-contentful-paint 25
+		 server-response-time
+		 render-blocking-resources
+		 redirects
+		 critical-request-chains
+		 uses-text-compression
+		 uses-rel-preconnect
+		 uses-rel-preload
+		 font-display
+		 unminified-javascript
+		 unminified-css
+		 unused-css-rules
+		 largest-contentful-paint-element
+		 preload-lcp-image
+		 unused-javascript
+		 efficient-animated-content
+		 total-byte-weight
+	 cumulative-layout-shift 15
+		 layout-shift-elements
+		 non-composited-animations
+		 unsized-images
+	 max-potential-fid 0
+	 first-meaningful-paint 0
+	 render-blocking-resources 0
+	 uses-responsive-images 0
+	 offscreen-images 0
+	 unminified-css 0
+	 unminified-javascript 0
+	 unused-css-rules 0
+	 unused-javascript 0
+	 uses-optimized-images 0
+	 modern-image-formats 0
+	 uses-text-compression 0
+	 uses-rel-preconnect 0
+	 server-response-time 0
+	 redirects 0
+	 uses-rel-preload 0
+	 efficient-animated-content 0
+	 duplicated-javascript 0
+	 legacy-javascript 0
+	 preload-lcp-image 0
+	 total-byte-weight 0
+	 uses-long-cache-ttl 0
+	 dom-size 0
+	 critical-request-chains 0
+	 user-timings 0
+	 bootup-time 0
+	 mainthread-work-breakdown 0
+	 font-display 0
+	 resource-summary 0
+	 third-party-summary 0
+	 third-party-facades 0
+	 largest-contentful-paint-element 0
+	 lcp-lazy-loaded 0
+	 layout-shift-elements 0
+	 uses-passive-event-listeners 0
+	 no-document-write 0
+	 long-tasks 0
+	 non-composited-animations 0
+	 unsized-images 0
+	 viewport 0
+	 no-unload-listeners 0
+	 performance-budget 0
+	 timing-budget 0
+	 network-requests 0
+	 network-rtt 0
+	 network-server-latency 0
+	 main-thread-tasks 0
+	 diagnostics 0
+	 metrics 0
+	 screenshot-thumbnails 0
+	 final-screenshot 0
+	 script-treemap-data 0
+	 first-contentful-paint-3g 0
+##############################
+##############################
+Barrierefreiheit
+	 accesskeys 0
+	 aria-allowed-attr 10
+	 aria-command-name 3
+	 aria-hidden-body 10
+	 aria-hidden-focus 3
+	 aria-input-field-name 0
+	 aria-meter-name 0
+	 aria-progressbar-name 0
+	 aria-required-attr 10
+	 aria-required-children 0
+	 aria-required-parent 0
+	 aria-roles 10
+	 aria-toggle-field-name 0
+	 aria-tooltip-name 0
+	 aria-treeitem-name 0
+	 aria-valid-attr-value 10
+	 aria-valid-attr 10
+	 button-name 10
+	 bypass 3
+	 color-contrast 3
+	 definition-list 0
+	 dlitem 0
+	 document-title 3
+	 duplicate-id-active 3
+	 duplicate-id-aria 10
+	 form-field-multiple-labels 0
+	 frame-title 0
+	 heading-order 2
+	 html-has-lang 3
+	 html-lang-valid 3
+	 image-alt 10
+	 input-image-alt 0
+	 label 10
+	 link-name 3
+	 list 3
+	 listitem 3
+	 meta-refresh 0
+	 meta-viewport 10
+	 object-alt 0
+	 tabindex 3
+	 td-headers-attr 0
+	 th-has-data-cells 0
+	 valid-lang 0
+	 video-caption 0
+	 logical-tab-order 0
+	 focusable-controls 0
+	 interactive-element-affordance 0
+	 managed-focus 0
+	 focus-traps 0
+	 custom-controls-labels 0
+	 custom-controls-roles 0
+	 visual-order-follows-dom 0
+	 offscreen-content-hidden 0
+	 use-landmarks 0
+##############################
+##############################
+Best Practices
+	 is-on-https 1
+	 geolocation-on-start 1
+	 notification-on-start 1
+	 no-vulnerable-libraries 1
+	 csp-xss 0
+	 password-inputs-can-be-pasted-into 1
+	 image-aspect-ratio 1
+	 image-size-responsive 1
+	 preload-fonts 0
+	 doctype 1
+	 charset 1
+	 js-libraries 0
+	 deprecations 1
+	 errors-in-console 1
+	 valid-source-maps 0
+	 inspector-issues 1
+##############################
+##############################
+SEO
+	 viewport 1
+	 document-title 1
+	 meta-description 1
+	 http-status-code 1
+	 link-text 1
+	 crawlable-anchors 1
+	 is-crawlable 1
+	 robots-txt 1
+	 image-alt 1
+	 hreflang 1
+	 canonical 1
+	 font-size 1
+	 plugins 1
+	 tap-targets 1
+	 structured-data 0
+##############################
+##############################
+PWA
+	 installable-manifest 2
+	 service-worker 1
+	 splash-screen 1
+	 themed-omnibox 1
+	 content-width 1
+	 viewport 2
+	 apple-touch-icon 1
+	 maskable-icon 1
+	 pwa-cross-browser 0
+	 pwa-page-transitions 0
+	 pwa-each-page-has-url 0
+##############################
