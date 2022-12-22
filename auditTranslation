@@ -1,0 +1,455 @@
+link-name
+	 Links haben keinen leicht erkennbaren Namen 
+
+custom-controls-roles
+	 Custom controls have ARIA roles 
+
+is-on-https
+	 Verwendet HTTPS 
+
+structured-data
+	 Strukturierte Daten sind gültig 
+
+focusable-controls
+	 Interactive controls are keyboard focusable 
+
+full-page-screenshot
+	 Full-page screenshot 
+
+duplicated-javascript
+	 In JavaScript-Bundles doppelt vorhandene Module entfernen 
+
+network-requests
+	 Network Requests 
+
+document-title
+	 Dokument enthält ein `<title>`-Element 
+
+performance-budget
+	 Leistungsbudget 
+
+button-name
+	 Die Namen der Schaltflächen sind für Screenreader zugänglich 
+
+deprecations
+	 Vermeidet veraltete APIs 
+
+aria-hidden-focus
+	 `[aria-hidden="true"]`-Elemente enthalten keine fokussierbaren Unterelemente 
+
+plugins
+	 Dokument verwendet keine Plug-ins 
+
+unsized-images
+	 Bildelemente haben keine explizite `width` und `height` 
+
+visual-order-follows-dom
+	 Visual order on the page follows DOM order 
+
+aria-required-attr
+	 `[role]`-Elemente verfügen über alle erforderlichen `[aria-*]`-Attribute 
+
+speed-index
+	 Speed Index 
+
+main-thread-tasks
+	 Tasks 
+
+frame-title
+	 `<frame>`- oder `<iframe>`-Elemente verfügen über einen Titel 
+
+no-vulnerable-libraries
+	 Vermeidet Front-End-JavaScript-Bibliotheken mit bekannten Sicherheitslücken 
+
+robots-txt
+	 robots.txt ist gültig 
+
+unminified-css
+	 CSS komprimieren 
+
+service-worker
+	 Es wurde kein Service Worker erkannt, der die Seite und `start_url` kontrolliert 
+
+listitem
+	 Listenelemente (`<li>`) befinden sich in übergeordneten `<ul>`- oder `<ol>`-Elementen 
+
+notification-on-start
+	 Fordert während des Seitenaufbaus keine Benachrichtigungsberechtigung an 
+
+meta-viewport
+	 `[user-scalable="no"]` wird nicht im `<meta name="viewport">`-Element verwendet und das `[maximum-scale]`-Attribut ist nicht kleiner als 5. 
+
+total-blocking-time
+	 Total Blocking Time 
+
+first-meaningful-paint
+	 First Meaningful Paint 
+
+pwa-each-page-has-url
+	 Jede Seite hat eine URL 
+
+dlitem
+	 Definitionslistenelemente sind in `<dl>`-Elemente eingefasst 
+
+aria-roles
+	 `[role]`-Werte sind gültig 
+
+first-contentful-paint
+	 First Contentful Paint 
+
+apple-touch-icon
+	 Hat kein gültiges `apple-touch-icon` 
+
+meta-refresh
+	 Dieses Dokument verwendet `<meta http-equiv="refresh">` nicht 
+
+password-inputs-can-be-pasted-into
+	 Erlaubt Nutzern, Inhalte in Passwortfelder einzufügen 
+
+aria-input-field-name
+	 ARIA-Eingabefelder haben zugängliche Namen 
+
+is-crawlable
+	 Seite ist nicht von Indexierung ausgeschlossen 
+
+th-has-data-cells
+	 Für `<th>`-Elemente und Elemente mit `[role="columnheader"/"rowheader"]` sind Datenzellen vorhanden, die sie beschreiben. 
+
+aria-hidden-body
+	 `[aria-hidden="true"]` ist in dem Dokument `<body>` nicht vorhanden 
+
+total-byte-weight
+	 Sehr große Netzwerknutzlasten vermeiden 
+
+video-caption
+	 `<video>`-Elemente enthalten ein `<track>`-Element mit `[kind="captions"]` 
+
+duplicate-id-active
+	 `[id]`-Attribute zu aktiven, fokussierbaren Elementen sind eindeutig 
+
+efficient-animated-content
+	 Videoformate für animierte Inhalte verwenden 
+
+list
+	 Listen enthalten nur `<li>`-Elemente und Elemente zur Skriptunterstützung (`<script>` sowie `<template>`). 
+
+largest-contentful-paint
+	 Largest Contentful Paint 
+
+link-text
+	 Links haben beschreibenden Text 
+
+meta-description
+	 Dokument enthält eine Meta-Beschreibung 
+
+third-party-summary
+	 Drittanbieternutzung minimieren 
+
+bootup-time
+	 Ausführungszeit von JavaScript reduzieren 
+
+td-headers-attr
+	 Zellen in einem "`<table>`"-Element, die das Attribut "`[headers]`" enthalten, verweisen auf Zellen in derselben Tabelle. 
+
+long-tasks
+	 Lange Hauptthread-Aufgaben vermeiden 
+
+image-size-responsive
+	 Stellt Bilder mit angemessener Auflösung bereit 
+
+duplicate-id-aria
+	 ARIA-IDs sind eindeutig 
+
+interactive-element-affordance
+	 Interactive elements indicate their purpose and state 
+
+max-potential-fid
+	 Maximaler potenzieller First Input Delay 
+
+uses-passive-event-listeners
+	 Verwendet keine passiven Listener zur Verbesserung der Scrollleistung 
+
+legacy-javascript
+	 Verhindern, dass in modernen Browsern veraltetes JavaScript bereitgestellt wird 
+
+pwa-cross-browser
+	 Website funktioniert auf verschiedenen Browsern 
+
+color-contrast
+	 Das Kontrastverhältnis von Hintergrund- und Vordergrundfarben ist nicht ausreichend. 
+
+use-landmarks
+	 HTML5 landmark elements are used to improve navigation 
+
+unused-css-rules
+	 Reduzieren Sie nicht verwendete CSS 
+
+user-timings
+	 Markierungen und Messungen für das Nutzertiming 
+
+tap-targets
+	 Größe von Tippzielen ist nicht richtig eingestellt 
+
+aria-meter-name
+	 ARIA `meter`-Elemente haben zugängliche Namen 
+
+dom-size
+	 Übermäßige DOM-Größe vermeiden 
+
+third-party-facades
+	 Lazy Loading von Ressourcen von Drittanbietern mit Fassaden 
+
+html-has-lang
+	 `<html>`-Element hat ein `[lang]`-Attribut 
+
+critical-request-chains
+	 Verkettung kritischer Anfragen vermeiden 
+
+script-treemap-data
+	 Script Treemap Data 
+
+no-document-write
+	 Verwendet kein `document.write()` 
+
+js-libraries
+	 JavaScript-Bibliotheken erkannt 
+
+valid-lang
+	 `[lang]`-Attribute weisen einen gültigen Wert auf 
+
+form-field-multiple-labels
+	 Kein Formularfeld hat mehrere Labels 
+
+crawlable-anchors
+	 Links können nicht gecrawlt werden 
+
+custom-controls-labels
+	 Custom controls have associated labels 
+
+unminified-javascript
+	 JavaScript komprimieren 
+
+largest-contentful-paint-element
+	 Largest Contentful Paint-Element 
+
+heading-order
+	 Überschriftenelemente werden in einer fortlaufenden absteigenden Reihenfolge angezeigt 
+
+uses-rel-preconnect
+	 Vorverbindung zu erforderlichen Ursprüngen aufbauen 
+
+aria-command-name
+	 `button`-, `link`- und `menuitem`-Elemente haben keine zugänglichen Namen. 
+
+no-unload-listeners
+	 Keine `unload`-Ereignis-Listener gefunden 
+
+resource-summary
+	 Halten Sie die Anfrageanzahl niedrig und die Übertragungsgröße gering 
+
+preload-fonts
+	 Schriftarten mit `font-display: optional` werden vorab geladen 
+
+interactive
+	 Time to Interactive 
+
+content-width
+	 Inhalt hat die richtige Größe für den Darstellungsbereich 
+
+timing-budget
+	 Zeitbudget 
+
+aria-toggle-field-name
+	 ARIA-Ein-/Aus-Schaltflächen haben zugängliche Namen 
+
+canonical
+	 Dokument enthält ein gültiges `rel=canonical`-Element 
+
+errors-in-console
+	 Es wurden keine Browserfehler in der Konsole protokolliert 
+
+image-alt
+	 Bildelemente verfügen über `[alt]`-Attribute 
+
+tabindex
+	 Kein Element hat einen `[tabindex]`-Wert größer als 0 
+
+first-contentful-paint-3g
+	 First Contentful Paint (3G) 
+
+bypass
+	 Die Seite enthält eine Überschrift, einen Link zum Überspringen oder einen Landmark-Bereich 
+
+uses-optimized-images
+	 Bilder effizient codieren 
+
+aria-tooltip-name
+	 ARIA `tooltip`-Elemente haben zugängliche Namen 
+
+http-status-code
+	 Seite hat einen gültigen HTTP-Statuscode 
+
+layout-shift-elements
+	 Umfangreiche Layoutverschiebungen vermeiden 
+
+inspector-issues
+	 Keine Probleme im `Issues`-Bereich der Chrome-Entwicklertools 
+
+doctype
+	 Seite verfügt über den HTML-DOCTYPE 
+
+geolocation-on-start
+	 Fordert während des Seitenaufbaus keine Berechtigung zur Standortbestimmung an 
+
+uses-long-cache-ttl
+	 Verwendet eine effiziente Cache-Richtlinie für statische Inhalte 
+
+pwa-page-transitions
+	 Seitenübergänge vermitteln nicht das Gefühl von übermäßigen Ladezeiten 
+
+input-image-alt
+	 `<input type="image">`-Elemente haben `[alt]`-Text 
+
+html-lang-valid
+	 Das `<html>`-Element hat einen gültigen Wert für sein `[lang]`-Attribut 
+
+modern-image-formats
+	 Bilder in modernen Formaten bereitstellen 
+
+managed-focus
+	 The user's focus is directed to new content added to the page 
+
+font-display
+	 Darauf achten, dass der Text während der Webfont-Ladevorgänge sichtbar bleibt 
+
+diagnostics
+	 Diagnostics 
+
+non-composited-animations
+	 Nicht zusammengesetzte Animationen vermeiden 
+
+logical-tab-order
+	 The page has a logical tab order 
+
+offscreen-images
+	 Nicht sichtbare Bilder aufschieben 
+
+render-blocking-resources
+	 Ressourcen beseitigen, die das Rendering blockieren 
+
+aria-treeitem-name
+	 ARIA `treeitem`-Elemente haben zugängliche Namen 
+
+screenshot-thumbnails
+	 Screenshot Thumbnails 
+
+installable-manifest
+	 Das Manifest der Web-App oder der Service Worker erfüllt die Anforderungen an die Installierbarkeit nicht 
+
+label
+	 Formularelemente sind mit Labels verknüpft 
+
+charset
+	 Korrekt definierter Zeichensatz 
+
+uses-text-compression
+	 Textkomprimierung aktivieren 
+
+splash-screen
+	 Nicht für einen benutzerdefinierten Startbildschirm konfiguriert 
+
+hreflang
+	 Dokument enthält ein gültiges `hreflang`-Element 
+
+redirects
+	 Mehrere Weiterleitungen auf die Seite vermeiden 
+
+aria-valid-attr-value
+	 `[aria-*]`-Attribute weisen gültige Werte auf 
+
+aria-valid-attr
+	 `[aria-*]`-Attribute sind gültig und richtig geschrieben 
+
+definition-list
+	 `<dl>`-Elemente enthalten ausschließlich Gruppen aus `<dt>`- und `<dd>`-Elementen sowie `<script>`-, `<template>`- oder `<div>`-Elemente, die richtig angeordnet sind. 
+
+aria-progressbar-name
+	 ARIA `progressbar`-Elemente haben zugängliche Namen 
+
+image-aspect-ratio
+	 Zeigt Bilder mit einem korrekten Seitenverhältnis an 
+
+offscreen-content-hidden
+	 Offscreen content is hidden from assistive technology 
+
+metrics
+	 Metrics 
+
+aria-allowed-attr
+	 `[aria-*]`-Attribute entsprechen ihren Rollen 
+
+viewport
+	 Hat ein `<meta name="viewport">`-Tag mit `width` oder `initial-scale` 
+
+aria-required-parent
+	 `[role]`-Elemente sind ihren jeweils erforderlichen übergeordneten Elementen untergeordnet 
+
+network-server-latency
+	 Server-Back-End-Latenzen 
+
+mainthread-work-breakdown
+	 Aufwand für Hauptthread minimieren 
+
+cumulative-layout-shift
+	 Cumulative Layout Shift 
+
+lcp-lazy-loaded
+	 Largest Contentful Paint-Bild wurde nicht mit Lazy Loading geladen 
+
+accesskeys
+	 `[accesskey]`-Werte sind eindeutig 
+
+preload-lcp-image
+	 Largest Contentful Paint-Bild vorab laden 
+
+object-alt
+	 `<object>`-Elemente haben alternativen Text 
+
+csp-xss
+	 Sicherstellen, dass CSP effektiv gegen XSS-Angriffe wirkt 
+
+font-size
+	 Dokument enthält gut lesbare Schriftgrößen 
+
+network-rtt
+	 Netzwerk-Umlaufzeit 
+
+final-screenshot
+	 Final Screenshot 
+
+unused-javascript
+	 Reduzieren Sie nicht verwendetes JavaScript 
+
+uses-responsive-images
+	 Bilder richtig dimensionieren 
+
+server-response-time
+	 Kurze Erstreaktionszeit des Servers 
+
+uses-rel-preload
+	 Wichtige Anforderungen vorab laden 
+
+valid-source-maps
+	 Seite hat gültige Quellzuordnungen 
+
+focus-traps
+	 User focus is not accidentally trapped in a region 
+
+aria-required-children
+	 Die Elemente mit einer ARIA-`[role]`, deren untergeordnete Elemente eine bestimmte `[role]` enthalten müssen, haben alle erforderlichen untergeordneten Elemente. 
+
+themed-omnibox
+	 Legt keine Designfarbe für die Adressleiste fest. 
+
+maskable-icon
+	 Das Manifest hat kein maskierbares Symbol 
