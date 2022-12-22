@@ -1,455 +1,608 @@
 link-name
 	 Links haben keinen leicht erkennbaren Namen 
+	 Linktext, der leicht erkennbar, eindeutig und fokussierbar ist, verbessert die Navigation für Screenreader-Nutzer. Dies gilt auch für alternativen Text für Bilder, die als Links verwendet werden. [Weitere Informationen.](https://web.dev/link-name/) 
 
 custom-controls-roles
 	 Custom controls have ARIA roles 
+	 Custom interactive controls have appropriate ARIA roles. [Learn more](https://web.dev/custom-control-roles/). 
 
 is-on-https
 	 Verwendet HTTPS 
+	 Alle Websites sollten auch dann mit HTTPS geschützt werden, wenn sie keine sensiblen Daten enthalten. Dies schließt die Vermeidung [gemischter Inhalte](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content) ein, bei denen einige Ressourcen über HTTP geladen werden, obwohl die Erstanfrage über HTTPS erfolgte. HTTPS verhindert, dass andere Personen die Website manipulieren oder die Kommunikation zwischen Ihrer App und Ihren Nutzern mitverfolgen können. Dieses Protokoll ist eine Voraussetzung für HTTP/2 sowie für viele neue Webplattform-APIs. [Weitere Informationen](https://web.dev/is-on-https/) 
 
 structured-data
 	 Strukturierte Daten sind gültig 
+	 Sie können das [Testtool für strukturierte Daten](https://search.google.com/structured-data/testing-tool/) und den [Lint für strukturierte Daten](http://linter.structured-data.org/) ausführen, um strukturierte Daten zu validieren. [Weitere Informationen.](https://web.dev/structured-data/) 
 
 focusable-controls
 	 Interactive controls are keyboard focusable 
+	 Custom interactive controls are keyboard focusable and display a focus indicator. [Learn more](https://web.dev/focusable-controls/). 
 
 full-page-screenshot
 	 Full-page screenshot 
+	 A full-height screenshot of the final rendered page 
 
 duplicated-javascript
 	 In JavaScript-Bundles doppelt vorhandene Module entfernen 
+	 Entfernen Sie große, doppelt vorhandene JavaScript-Module aus Bundles, um unnötige Datenübertragungen im Netzwerk zu reduzieren.  
 
 network-requests
 	 Network Requests 
+	 Lists the network requests that were made during page load. 
 
 document-title
 	 Dokument enthält ein `<title>`-Element 
+	 Anhand des Titels wissen Screenreader-Nutzer, worum es auf der Seite geht. Außerdem entscheiden Nutzer von Suchmaschinen auf der Grundlage des Titels, ob eine Seite für ihre Suche relevant ist. [Weitere Informationen.](https://web.dev/document-title/) 
 
 performance-budget
 	 Leistungsbudget 
+	 Die Anzahl und Größe der Netzwerkanfragen sollten unter den Zielvorgaben des Leistungsbudgets liegen. [Weitere Informationen.](https://developers.google.com/web/tools/lighthouse/audits/budgets) 
 
 button-name
 	 Die Namen der Schaltflächen sind für Screenreader zugänglich 
+	 Wenn eine Schaltfläche keinen zugänglichen Namen hat, wird sie von Screenreadern als "Schaltfläche" angesagt, was sie für Nutzer, die auf Screenreader angewiesen sind, unbrauchbar macht. [Weitere Informationen.](https://web.dev/button-name/) 
 
 deprecations
 	 Vermeidet veraltete APIs 
+	 Veraltete APIs werden aus dem Browser entfernt. [Weitere Informationen.](https://web.dev/deprecations/) 
 
 aria-hidden-focus
 	 `[aria-hidden="true"]`-Elemente enthalten keine fokussierbaren Unterelemente 
+	 Fokussierbare Unterelemente in einem `[aria-hidden="true"]`-Element führen dazu, dass Nutzer von Hilfstechnologien wie Screenreadern solche interaktiven Elemente nicht verwenden können. [Weitere Informationen](https://web.dev/aria-hidden-focus/) 
 
 plugins
 	 Dokument verwendet keine Plug-ins 
+	 Suchmaschinen können keine Plug-in-Inhalte indexieren, und auf vielen Geräten werden Plug-ins eingeschränkt oder nicht unterstützt. [Weitere Informationen.](https://web.dev/plugins/) 
 
 unsized-images
 	 Bildelemente haben keine explizite `width` und `height` 
+	 Legen Sie eine explizite Breite und Höhe für Bildelemente fest, um Layoutverschiebungen zu reduzieren und CLS zu verbessern. [Weitere Informationen](https://web.dev/optimize-cls/#images-without-dimensions) 
 
 visual-order-follows-dom
 	 Visual order on the page follows DOM order 
+	 DOM order matches the visual order, improving navigation for assistive technology. [Learn more](https://web.dev/visual-order-follows-dom/). 
 
 aria-required-attr
 	 `[role]`-Elemente verfügen über alle erforderlichen `[aria-*]`-Attribute 
+	 Für einige ARIA-Rollen sind Attribute erforderlich, die Screenreadern den Zustand des Elements beschreiben. [Weitere Informationen.](https://web.dev/aria-required-attr/) 
 
 speed-index
 	 Speed Index 
+	 Der Geschwindigkeitsindex gibt an, wie schnell die Inhalte einer Seite sichtbar dargestellt werden. [Weitere Informationen.](https://web.dev/speed-index/) 
 
 main-thread-tasks
 	 Tasks 
+	 Lists the toplevel main thread tasks that executed during page load. 
 
 frame-title
 	 `<frame>`- oder `<iframe>`-Elemente verfügen über einen Titel 
+	 Nutzer von Screenreadern sind auf Frametitel angewiesen, die die Frameinhalte beschreiben. [Weitere Informationen.](https://web.dev/frame-title/) 
 
 no-vulnerable-libraries
 	 Vermeidet Front-End-JavaScript-Bibliotheken mit bekannten Sicherheitslücken 
+	 Einige Skripts von Drittanbietern können bekannte Sicherheitslücken enthalten, die von Angreifern leicht zu identifizieren und zu missbrauchen sind. [Weitere Informationen.](https://web.dev/no-vulnerable-libraries/) 
 
 robots-txt
 	 robots.txt ist gültig 
+	 Wenn Ihre robots.txt-Datei fehlerhaft ist, können Crawler möglicherweise nicht nachvollziehen, wie Ihre Website gecrawlt oder indexiert werden soll. [Weitere Informationen.](https://web.dev/robots-txt/) 
 
 unminified-css
 	 CSS komprimieren 
+	 Durch die Komprimierung von CSS-Dateien können Netzwerknutzlasten verkleinert werden. [Weitere Informationen.](https://web.dev/unminified-css/) 
 
 service-worker
 	 Es wurde kein Service Worker erkannt, der die Seite und `start_url` kontrolliert 
+	 Der Service Worker ermöglicht es Ihrer App, viele der Funktionen von progressiven Web-Apps zu nutzen, beispielsweise den Offlinemodus, das Hinzufügen zum Startbildschirm und Push-Benachrichtigungen. [Weitere Informationen.](https://web.dev/service-worker/) 
 
 listitem
 	 Listenelemente (`<li>`) befinden sich in übergeordneten `<ul>`- oder `<ol>`-Elementen 
+	 Listenelemente (`<li>`) müssen sich in einem übergeordneten `<ul>`- oder `<ol>`-Element befinden, damit Screenreader sie richtig ansagen können. [Weitere Informationen.](https://web.dev/listitem/) 
 
 notification-on-start
 	 Fordert während des Seitenaufbaus keine Benachrichtigungsberechtigung an 
+	 Nutzer sind misstrauisch oder verwirrt, wenn Websites die Berechtigung zum Senden von Benachrichtigungen ohne Begründung anfordern. Versuchen Sie stattdessen, die Anforderung mit Touch-Gesten zu verbinden. [Weitere Informationen.](https://web.dev/notification-on-start/) 
 
 meta-viewport
 	 `[user-scalable="no"]` wird nicht im `<meta name="viewport">`-Element verwendet und das `[maximum-scale]`-Attribut ist nicht kleiner als 5. 
+	 Wenn Sie die Zoomfunktion deaktivieren, haben Nutzer mit eingeschränktem Sehvermögen, die auf die Bildschirmvergrößerung angewiesen sind, Probleme, den Inhalt einer Webseite zu sehen. [Weitere Informationen.](https://web.dev/meta-viewport/) 
 
 total-blocking-time
 	 Total Blocking Time 
+	 Summe aller Zeiträume (in Millisekunden) zwischen FCP und Zeit bis Interaktivität, wenn die Aufgabendauer 50 ms überschreitet. [Weitere Informationen](https://web.dev/lighthouse-total-blocking-time/) 
 
 first-meaningful-paint
 	 First Meaningful Paint 
+	 "First Meaningful Paint" gibt an, wann die Hauptinhalte einer Seite sichtbar sind. [Weitere Informationen.](https://web.dev/first-meaningful-paint/) 
 
 pwa-each-page-has-url
 	 Jede Seite hat eine URL 
+	 Für die einzelnen Seiten sollten Deeplinks erstellt werden können. Achten Sie darauf, dass die entsprechenden URLs eindeutig sind, sodass sich die Seiten in sozialen Netzwerken leichter teilen lassen. [Weitere Informationen.](https://web.dev/pwa-each-page-has-url/) 
 
 dlitem
 	 Definitionslistenelemente sind in `<dl>`-Elemente eingefasst 
+	 Definitionslistenelemente (`<dt>` und `<dd>`) müssen in ein übergeordnetes `<dl>`-Element eingefasst sein, damit sie von Screenreadern richtig angesagt werden können. [Weitere Informationen.](https://web.dev/dlitem/) 
 
 aria-roles
 	 `[role]`-Werte sind gültig 
+	 Für ARIA-Rollen müssen gültige Werte angegeben sein, damit sie die beabsichtigten Hilfsfunktionen erfüllen können. [Weitere Informationen.](https://web.dev/aria-roles/) 
 
 first-contentful-paint
 	 First Contentful Paint 
+	 First Contentful Paint gibt an, wann der erste Text oder das erste Bild gezeichnet wird. [Weitere Informationen.](https://web.dev/first-contentful-paint/) 
 
 apple-touch-icon
 	 Hat kein gültiges `apple-touch-icon` 
+	 Definieren Sie ein `apple-touch-icon` für eine ideale Darstellung unter iOS, wenn Nutzer die progressive Web-App dem Startbildschirm hinzufügen. Es muss auf eine nicht transparente, quadratische PNG-Datei mit 192 px (oder 180 px) verweisen. [Weitere Informationen.](https://web.dev/apple-touch-icon/) 
 
 meta-refresh
 	 Dieses Dokument verwendet `<meta http-equiv="refresh">` nicht 
+	 Nutzer rechnen nicht damit, dass eine Seite automatisch aktualisiert wird. Außerdem wird dadurch der Fokus wieder auf den Seitenanfang verschoben. Das kann für den Nutzer frustrierend oder verwirrend sein. [Weitere Informationen.](https://web.dev/meta-refresh/) 
 
 password-inputs-can-be-pasted-into
 	 Erlaubt Nutzern, Inhalte in Passwortfelder einzufügen 
+	 Das Einfügen von Passwörtern sollte entsprechend guten Sicherheitsrichtlinien zulässig sein. [Weitere Informationen.](https://web.dev/password-inputs-can-be-pasted-into/) 
 
 aria-input-field-name
 	 ARIA-Eingabefelder haben zugängliche Namen 
+	 Wenn ein Eingabefeld keinen zugänglichen Namen hat, wird es von Screenreadern mit einer allgemeinen Bezeichnung angesagt. Dadurch ist es für Nutzer, die auf Screenreader angewiesen sind, unbrauchbar. [Weitere Informationen](https://web.dev/aria-name/) 
 
 is-crawlable
 	 Seite ist nicht von Indexierung ausgeschlossen 
+	 Suchmaschinen können Ihre Seiten nicht in die Suchergebnisse aufnehmen, wenn sie nicht dazu berechtigt sind, sie zu crawlen. [Weitere Informationen.](https://web.dev/is-crawable/) 
 
 th-has-data-cells
 	 Für `<th>`-Elemente und Elemente mit `[role="columnheader"/"rowheader"]` sind Datenzellen vorhanden, die sie beschreiben. 
+	 Screenreader bieten Funktionen, die die Navigation in Tabellen vereinfachen. Wenn Sie dafür sorgen, dass Tabellenüberschriften immer auf eine Auswahl von Zellen verweisen, kann dies für Screenreader-Nutzer hilfreich sein. [Weitere Informationen.](https://web.dev/th-has-data-cells/) 
 
 aria-hidden-body
 	 `[aria-hidden="true"]` ist in dem Dokument `<body>` nicht vorhanden 
+	 Hilfstechnologien wie Screenreader funktionieren nicht richtig, wenn für das Dokument `<body>` die Richtlinie auf `aria-hidden="true"` gestellt ist. [Weitere Informationen](https://web.dev/aria-hidden-body/) 
 
 total-byte-weight
 	 Sehr große Netzwerknutzlasten vermeiden 
+	 Große Netzwerknutzlasten kosten Nutzer bares Geld und hängen eng mit langen Ladezeiten zusammen. [Weitere Informationen.](https://web.dev/total-byte-weight/) 
 
 video-caption
 	 `<video>`-Elemente enthalten ein `<track>`-Element mit `[kind="captions"]` 
+	 Wenn ein Video Untertitel enthält, können gehörlose und hörgeschädigte Nutzer die Informationen im Video besser verstehen. [Weitere Informationen.](https://web.dev/video-caption/) 
 
 duplicate-id-active
 	 `[id]`-Attribute zu aktiven, fokussierbaren Elementen sind eindeutig 
+	 Für alle fokussierbaren Elemente ist ein eindeutiges `id` erforderlich, damit sie von Hilfstechnologien erkannt werden können. [Weitere Informationen](https://web.dev/duplicate-id-active/) 
 
 efficient-animated-content
 	 Videoformate für animierte Inhalte verwenden 
+	 Große GIF-Dateien sind nur bedingt für die Auslieferung animierter Inhalte geeignet. Sie können stattdessen MPEG4- oder WebM-Videos für Animationen und PNG oder WebP für statische Bilder verwenden und so die Netzwerk-Datenmenge reduzieren. [Weitere Informationen](https://web.dev/efficient-animated-content/) 
 
 list
 	 Listen enthalten nur `<li>`-Elemente und Elemente zur Skriptunterstützung (`<script>` sowie `<template>`). 
+	 Screenreader sagen Listen auf bestimmte Art und Weise an. Eine korrekte Listenstruktur gewährleistet, dass der Screenreader sie richtig ausgibt. [Weitere Informationen.](https://web.dev/list/) 
 
 largest-contentful-paint
 	 Largest Contentful Paint 
+	 Largest Contentful Paint gibt an, wie lange das Zeichnen des längsten Texts oder des größten Bilds dauert. [Weitere Informationen](https://web.dev/lighthouse-largest-contentful-paint/) 
 
 link-text
 	 Links haben beschreibenden Text 
+	 Mit beschreibendem Linktext können Suchmaschinen Ihre Inhalte besser verstehen. [Weitere Informationen.](https://web.dev/link-text/) 
 
 meta-description
 	 Dokument enthält eine Meta-Beschreibung 
+	 Meta-Beschreibungen können in die Suchergebnisse aufgenommen werden, um die Seiteninhalte kurz zusammenzufassen. [Weitere Informationen.](https://web.dev/meta-description/) 
 
 third-party-summary
 	 Drittanbieternutzung minimieren 
+	 Code von Drittanbietern kann die Ladegeschwindigkeit erheblich beeinträchtigen. Beschränken Sie die Zahl redundanter Drittanbieter und versuchen Sie, solchen Code erst nachträglich zu laden. [Weitere Informationen.](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/) 
 
 bootup-time
 	 Ausführungszeit von JavaScript reduzieren 
+	 Versuchen Sie, die Zeit für das Parsen, Kompilieren und Ausführen von JavaScript zu reduzieren. Die Bereitstellung kleinerer JS-Nutzlasten kann dabei helfen. [Weitere Informationen.](https://web.dev/bootup-time/) 
 
 td-headers-attr
 	 Zellen in einem "`<table>`"-Element, die das Attribut "`[headers]`" enthalten, verweisen auf Zellen in derselben Tabelle. 
+	 Screenreader bieten Funktionen, die die Navigation in Tabellen vereinfachen. Wenn Sie dafür sorgen, dass `<td>`-Zellen, die das `[headers]`-Attribut verwenden, nur auf andere Zellen in derselben Tabelle verweisen, kann dies für Screenreader-Nutzer hilfreich sein. [Weitere Informationen.](https://web.dev/td-headers-attr/) 
 
 long-tasks
 	 Lange Hauptthread-Aufgaben vermeiden 
+	 Listet die längsten Aufgaben im Hauptthread auf, was nützlich ist, um die Hauptursachen für Eingabeverzögerungen zu identifizieren. [Weitere Informationen](https://web.dev/long-tasks-devtools/) 
 
 image-size-responsive
 	 Stellt Bilder mit angemessener Auflösung bereit 
+	 Die originalen Abmessungen eines Bildes sollten proportional zu der Displaygröße und dem Pixel-Verhältnis sein, damit das Bild optimal angezeigt wird. [Weitere Informationen](https://web.dev/serve-responsive-images/) 
 
 duplicate-id-aria
 	 ARIA-IDs sind eindeutig 
+	 Der Wert einer ARIA-ID muss eindeutig sein, damit andere Instanzen nicht von Hilfstechnologien übersehen werden. [Weitere Informationen](https://web.dev/duplicate-id-aria/) 
 
 interactive-element-affordance
 	 Interactive elements indicate their purpose and state 
+	 Interactive elements, such as links and buttons, should indicate their state and be distinguishable from non-interactive elements. [Learn more](https://web.dev/interactive-element-affordance/). 
 
 max-potential-fid
 	 Maximaler potenzieller First Input Delay 
+	 Das maximale potenzielle First Input Delay, das bei Ihren Nutzern auftreten kann, entspricht der Dauer der längsten Aufgabe. [Weitere Informationen](https://web.dev/lighthouse-max-potential-fid/) 
 
 uses-passive-event-listeners
 	 Verwendet keine passiven Listener zur Verbesserung der Scrollleistung 
+	 Wenn Sie Ihre Ereignis-Listener für Tipp- und Mausradbewegungen als `passive` markieren, können Sie damit die Scrollleistung Ihrer Seite verbessern. [Weitere Informationen.](https://web.dev/uses-passive-event-listeners/) 
 
 legacy-javascript
 	 Verhindern, dass in modernen Browsern veraltetes JavaScript bereitgestellt wird 
+	 Dank Polyfills und "transform" können veraltete Browser die neuen JavaScript-Funktionen nutzen. Bei modernen Browsern hingegen sind viele davon nicht erforderlich. Für Ihr JavaScript-Bundle sollten Sie eine moderne Skriptimplementierungsstrategie unter Verwendung der module/nomodule-Funktionserkennung einsetzen. So können Sie einerseits den an moderne Browser übermittelten Code auf das Nötige reduzieren und gleichzeitig veraltete Browser bestmöglich unterstützen. [Weitere Informationen](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/) 
 
 pwa-cross-browser
 	 Website funktioniert auf verschiedenen Browsern 
+	 Damit Sie möglichst viele Nutzer erreichen können, sollte Ihre Website mit allen gängigen Browsern kompatibel sein. [Weitere Informationen.](https://web.dev/pwa-cross-browser/) 
 
 color-contrast
 	 Das Kontrastverhältnis von Hintergrund- und Vordergrundfarben ist nicht ausreichend. 
+	 Text mit geringem Kontrast ist für viele Nutzer schlecht oder gar nicht lesbar. [Weitere Informationen.](https://web.dev/color-contrast/) 
 
 use-landmarks
 	 HTML5 landmark elements are used to improve navigation 
+	 Landmark elements (<main>, <nav>, etc.) are used to improve the keyboard navigation of the page for assistive technology. [Learn more](https://web.dev/use-landmarks/). 
 
 unused-css-rules
 	 Reduzieren Sie nicht verwendete CSS 
+	 Sie können ungültige Regeln in Stylesheets reduzieren und CSS aufschieben, die nicht für ohne Scrollen sichtbare Inhalte verwendet werden, um den Datenverbrauch durch Netzwerkaktivität zu senken. [Weitere Informationen](https://web.dev/unused-css-rules/) 
 
 user-timings
 	 Markierungen und Messungen für das Nutzertiming 
+	 Sie können die User Timing API in Ihre App integrieren. Damit lässt sich die Leistung Ihrer App während wichtiger Nutzerinteraktionen in der Praxis messen. [Weitere Informationen.](https://web.dev/user-timings/) 
 
 tap-targets
 	 Größe von Tippzielen ist nicht richtig eingestellt 
+	 Interaktive Elemente wie Schaltflächen und Links sollten groß genug sein (48 x 48 px) und genügend Platz um sich herum haben, um einfach angetippt werden zu können. Dabei sollten sie sich aber nicht mit anderen Elementen überschneiden. [Weitere Informationen.](https://web.dev/tap-targets/) 
 
 aria-meter-name
 	 ARIA `meter`-Elemente haben zugängliche Namen 
+	 Wenn ein Element keinen barrierefreien Namen hat, wird es von Screenreadern mit einer allgemeinen Bezeichnung angesagt. Dadurch ist es für Nutzer, die auf Screenreader angewiesen sind, unbrauchbar. [Weitere Informationen](https://web.dev/aria-name/) 
 
 dom-size
 	 Übermäßige DOM-Größe vermeiden 
+	 Ein großes DOM führt zu hohem Speicherverbrauch, langwierigen [Stilberechnungen](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) und kostspieligen [dynamischen Umbrüchen im Layout](https://developers.google.com/speed/articles/reflow). [Weitere Informationen.](https://web.dev/dom-size/) 
 
 third-party-facades
 	 Lazy Loading von Ressourcen von Drittanbietern mit Fassaden 
+	 Für einige Einbettungen von Drittanbietern kann ein Lazy Load ausgeführt werden. Sie können sie durch eine Fassade ersetzen, bis sie benötigt werden. [Weitere Informationen](https://web.dev/third-party-facades/) 
 
 html-has-lang
 	 `<html>`-Element hat ein `[lang]`-Attribut 
+	 Wenn auf einer Seite kein lang-Attribut angegeben ist, nimmt ein Screenreader an, dass es sich um die Standardsprache handelt, die der Nutzer beim Einrichten des Screenreaders ausgewählt hat. Wenn die Sprache jedoch nicht der Standardsprache entspricht, gibt der Screenreader den Inhalt der Seite möglicherweise falsch aus. [Weitere Informationen.](https://web.dev/html-has-lang/) 
 
 critical-request-chains
 	 Verkettung kritischer Anfragen vermeiden 
+	 In den unten aufgeführten Ketten kritischer Anfragen können Sie sehen, welche Ressourcen mit einer hohen Priorität geladen werden. Versuchen Sie, die Ketten zu verkürzen, die Downloadgröße von Ressourcen zu reduzieren oder das Herunterladen unnötiger Ressourcen aufzuschieben, um den Seitenaufbau zu beschleunigen. [Weitere Informationen.](https://web.dev/critical-request-chains/) 
 
 script-treemap-data
 	 Script Treemap Data 
+	 Used for treemap app 
 
 no-document-write
 	 Verwendet kein `document.write()` 
+	 Für Nutzer mit langsamen Verbindungen können externe Skripts, die dynamisch über `document.write()` eingefügt werden, den Seitenaufbau um einige Sekunden verzögern. [Weitere Informationen.](https://web.dev/no-document-write/) 
 
 js-libraries
 	 JavaScript-Bibliotheken erkannt 
+	 Alle Front-End-JavaScript-Bibliotheken auf der Seite wurden erkannt. [Weitere Informationen.](https://web.dev/js-libraries/) 
 
 valid-lang
 	 `[lang]`-Attribute weisen einen gültigen Wert auf 
+	 Durch Angabe einer gültigen [Sprache gemäß BCP 47](https://www.w3.org/International/questions/qa-choosing-language-tags#question) in Elementen kann der Text von einem Screenreader korrekt ausgesprochen werden. [Weitere Informationen.](https://web.dev/valid-lang/) 
 
 form-field-multiple-labels
 	 Kein Formularfeld hat mehrere Labels 
+	 Formularfelder mit mehreren Labels werden von Hilfstechnologien wie Screenreadern unter Umständen missverständlich angesagt, da diese entweder das erste, das letzte oder alle Labels verwenden. [Weitere Informationen](https://web.dev/form-field-multiple-labels/) 
 
 crawlable-anchors
 	 Links können nicht gecrawlt werden 
+	 Suchmaschinen verwenden möglicherweise `href`-Attribute für Links, um Websites zu crawlen. Stellen Sie sicher, dass das `href`-Attribut von Anchor-Elementen auf ein geeignetes Ziel verweist, damit mehr Seiten auf der Website gefunden werden können. [Weitere Informationen](https://support.google.com/webmasters/answer/9112205) 
 
 custom-controls-labels
 	 Custom controls have associated labels 
+	 Custom interactive controls have associated labels, provided by aria-label or aria-labelledby. [Learn more](https://web.dev/custom-controls-labels/). 
 
 unminified-javascript
 	 JavaScript komprimieren 
+	 Durch die Komprimierung von JavaScript-Dateien können Nutzlastgrößen und die Zeit zum Parsen von Skripts reduziert werden. [Weitere Informationen.](https://web.dev/unminified-javascript/) 
 
 largest-contentful-paint-element
 	 Largest Contentful Paint-Element 
+	 Dies ist das größte Inhaltselement, das im Darstellungsbereich angezeigt wird. [Weitere Informationen](https://web.dev/lighthouse-largest-contentful-paint/) 
 
 heading-order
 	 Überschriftenelemente werden in einer fortlaufenden absteigenden Reihenfolge angezeigt 
+	 Richtig geordnete Überschriften, die keine Ebenen überspringen, geben der Seite eine semantische Struktur. Wenn man Hilfstechnologien verwendet, ist es dadurch leichter, sich auf der Seite zurechtzufinden und die Inhalte zu verstehen. [Weitere Informationen](https://web.dev/heading-order/) 
 
 uses-rel-preconnect
 	 Vorverbindung zu erforderlichen Ursprüngen aufbauen 
+	 Wenn Sie Hinweise auf Ressourcen als `preconnect` oder `dns-prefetch` hinzufügen, können Sie möglichst frühzeitig eine Verbindung zu wichtigen Drittanbieterursprüngen herstellen. [Weitere Informationen.](https://web.dev/uses-rel-preconnect/) 
 
 aria-command-name
 	 `button`-, `link`- und `menuitem`-Elemente haben keine zugänglichen Namen. 
+	 Wenn ein Element keinen barrierefreien Namen hat, wird es von Screenreadern mit einer allgemeinen Bezeichnung angesagt. Dadurch ist es für Nutzer, die auf Screenreader angewiesen sind, unbrauchbar. [Weitere Informationen](https://web.dev/aria-name/) 
 
 no-unload-listeners
 	 Keine `unload`-Ereignis-Listener gefunden 
+	 Das `unload`-Ereignis wird nicht zuverlässig ausgelöst. Wenn der Listener darauf wartet, kann das Browseroptimierungen wie den Back-Forward-Cache beeinträchtigen. Verwenden Sie stattdessen `pagehide`- oder `visibilitychange`-Ereignisse. [Weitere Informationen](https://web.dev/bfcache/#never-use-the-unload-event) 
 
 resource-summary
 	 Halten Sie die Anfrageanzahl niedrig und die Übertragungsgröße gering 
+	 Fügen Sie zum Einrichten von Budgets für die Anzahl und Größe von Seitenressourcen eine budget.json-Datei hinzu. [Weitere Informationen.](https://web.dev/use-lighthouse-for-performance-budgets/) 
 
 preload-fonts
 	 Schriftarten mit `font-display: optional` werden vorab geladen 
+	 Sie sollten `optional`-Schriftarten vorab laden, damit sie von Erstbesuchern verwendet werden können. [Weitere Informationen](https://web.dev/preload-optional-fonts/) 
 
 interactive
 	 Time to Interactive 
+	 Die Zeit bis Interaktivität entspricht der Zeit, die vergeht, bis die Seite vollständig interaktiv ist. [Weitere Informationen.](https://web.dev/interactive/) 
 
 content-width
 	 Inhalt hat die richtige Größe für den Darstellungsbereich 
+	 Wenn die Breite Ihrer App-Inhalte nicht mit der des Darstellungsbereichs übereinstimmt, ist Ihre App möglicherweise nicht für Bildschirme von Mobilgeräten optimiert. [Weitere Informationen.](https://web.dev/content-width/) 
 
 timing-budget
 	 Zeitbudget 
+	 Legen Sie ein Zeitbudget fest, mit dem Sie die Leistung Ihrer Website im Auge behalten können. Leistungsstarke Websites werden schnell geladen und reagieren umgehend auf Nutzereingaben. [Weitere Informationen](https://developers.google.com/web/tools/lighthouse/audits/budgets) 
 
 aria-toggle-field-name
 	 ARIA-Ein-/Aus-Schaltflächen haben zugängliche Namen 
+	 Wenn eine Ein-/Aus-Schaltfläche keinen zugänglichen Namen hat, wird sie von Screenreadern mit einer allgemeinen Bezeichnung angesagt. Dadurch ist sie für Nutzer, die auf Screenreader angewiesen sind, unbrauchbar. [Weitere Informationen](https://web.dev/aria-name/) 
 
 canonical
 	 Dokument enthält ein gültiges `rel=canonical`-Element 
+	 Über kanonische Links wird angegeben, welche URL in den Suchergebnissen angezeigt werden soll. [Weitere Informationen.](https://web.dev/canonical/) 
 
 errors-in-console
 	 Es wurden keine Browserfehler in der Konsole protokolliert 
+	 In der Konsole protokollierte Fehler weisen auf ungelöste Probleme hin. Sie können durch fehlgeschlagene Netzwerkanfragen und andere Browser-Probleme verursacht werden. [Weitere Informationen](https://web.dev/errors-in-console/) 
 
 image-alt
 	 Bildelemente verfügen über `[alt]`-Attribute 
+	 Informative Elemente sollten einen kurzen, beschreibenden alternativen Text haben. Dekorative Elemente können mit einem leeren ALT-Attribut ignoriert werden. [Weitere Informationen.](https://web.dev/image-alt/) 
 
 tabindex
 	 Kein Element hat einen `[tabindex]`-Wert größer als 0 
+	 Ein Wert größer als 0 impliziert eine explizite Navigationsanordnung. Das ist zwar technisch möglich; aber für Nutzer, die auf Hilfstechnologien angewiesen sind, ist dies häufig frustrierend. [Weitere Informationen.](https://web.dev/tabindex/) 
 
 first-contentful-paint-3g
 	 First Contentful Paint (3G) 
+	 First Contentful Paint 3G marks the time at which the first text or image is painted while on a 3G network. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/first-contentful-paint). 
 
 bypass
 	 Die Seite enthält eine Überschrift, einen Link zum Überspringen oder einen Landmark-Bereich 
+	 Wenn Tastaturnutzer Inhalte umgehen können, die sich wiederholen, sorgt das für eine effizientere Navigation. [Weitere Informationen.](https://web.dev/bypass/) 
 
 uses-optimized-images
 	 Bilder effizient codieren 
+	 Optimierte Bilder werden schneller geladen und verbrauchen weniger mobile Daten. [Weitere Informationen.](https://web.dev/uses-optimized-images/) 
 
 aria-tooltip-name
 	 ARIA `tooltip`-Elemente haben zugängliche Namen 
+	 Wenn ein Element keinen barrierefreien Namen hat, wird es von Screenreadern mit einer allgemeinen Bezeichnung angesagt. Dadurch ist es für Nutzer, die auf Screenreader angewiesen sind, unbrauchbar. [Weitere Informationen](https://web.dev/aria-name/) 
 
 http-status-code
 	 Seite hat einen gültigen HTTP-Statuscode 
+	 Seiten mit ungültigen HTTP-Statuscodes werden möglicherweise nicht richtig indexiert. [Weitere Informationen.](https://web.dev/http-status-code/) 
 
 layout-shift-elements
 	 Umfangreiche Layoutverschiebungen vermeiden 
+	 Diese DOM-Elemente tragen am stärksten zur CLS der Seite bei. 
 
 inspector-issues
 	 Keine Probleme im `Issues`-Bereich der Chrome-Entwicklertools 
+	 Im `Issues`-Bereich der Chrome-Entwicklertools wurden ungelöste Probleme protokolliert. Sie können durch fehlgeschlagene Netzwerkanfragen, unzureichende Sicherheitsmaßnahmen und andere Browser-Probleme verursacht sein. Öffnen Sie den Bereich mit den Problemen in Chrome-Entwicklertools, um weitere Details zu den einzelnen Problemen aufzurufen. 
 
 doctype
 	 Seite verfügt über den HTML-DOCTYPE 
+	 Wenn Sie einen DOCTYPE festlegen, hindern Sie den Browser daran, zum Quirks-Modus zu wechseln. [Weitere Informationen.](https://web.dev/doctype/) 
 
 geolocation-on-start
 	 Fordert während des Seitenaufbaus keine Berechtigung zur Standortbestimmung an 
+	 Nutzer sind misstrauisch oder verwirrt, wenn Websites den Standort ohne Begründung anfordern. Versuchen Sie stattdessen, die Anforderung mit einer Nutzeraktion zu verbinden. [Weitere Informationen.](https://web.dev/geolocation-on-start/) 
 
 uses-long-cache-ttl
 	 Verwendet eine effiziente Cache-Richtlinie für statische Inhalte 
+	 Eine lange Lebensdauer des Cache kann wiederholte Besuche Ihrer Seite beschleunigen. [Weitere Informationen.](https://web.dev/uses-long-cache-ttl/) 
 
 pwa-page-transitions
 	 Seitenübergänge vermitteln nicht das Gefühl von übermäßigen Ladezeiten 
+	 Übergänge sollten sich auch bei einer langsamen Netzwerkverbindung schnell anfühlen. Dies trägt beim Nutzer erheblich zur wahrgenommenen Leistung bei. [Weitere Informationen.](https://web.dev/pwa-page-transitions/) 
 
 input-image-alt
 	 `<input type="image">`-Elemente haben `[alt]`-Text 
+	 Wenn ein Bild als `<input>`-Schaltfläche verwendet wird, kann die Angabe von alternativem Text Screenreader-Nutzern helfen, den Zweck der Schaltfläche besser zu verstehen. [Weitere Informationen.](https://web.dev/input-image-alt/) 
 
 html-lang-valid
 	 Das `<html>`-Element hat einen gültigen Wert für sein `[lang]`-Attribut 
+	 Durch Angabe einer gültigen [Sprache gemäß BCP 47](https://www.w3.org/International/questions/qa-choosing-language-tags#question) kann der Text von einem Screenreader korrekt wiedergegeben werden. [Weitere Informationen.](https://web.dev/html-lang-valid/) 
 
 modern-image-formats
 	 Bilder in modernen Formaten bereitstellen 
+	 Bildformate wie WebP und AVIF bieten oft eine bessere Komprimierung als PNG oder JPEG, wodurch sie schneller heruntergeladen werden und weniger Daten verbrauchen. [Weitere Informationen](https://web.dev/uses-webp-images/) 
 
 managed-focus
 	 The user's focus is directed to new content added to the page 
+	 If new content, such as a dialog, is added to the page, the user's focus is directed to it. [Learn more](https://web.dev/managed-focus/). 
 
 font-display
 	 Darauf achten, dass der Text während der Webfont-Ladevorgänge sichtbar bleibt 
+	 Verwenden Sie die CSS-Funktion font-display, damit der Text für Nutzer sichtbar ist, während Webfonts geladen werden. [Weitere Informationen.](https://web.dev/font-display/) 
 
 diagnostics
 	 Diagnostics 
+	 Collection of useful page vitals. 
 
 non-composited-animations
 	 Nicht zusammengesetzte Animationen vermeiden 
+	 Animationen, die nicht zusammengesetzt sind, können langsam sein und den CLS-Wert erhöhen. [Weitere Informationen](https://web.dev/non-composited-animations) 
 
 logical-tab-order
 	 The page has a logical tab order 
+	 Tabbing through the page follows the visual layout. Users cannot focus elements that are offscreen. [Learn more](https://web.dev/logical-tab-order/). 
 
 offscreen-images
 	 Nicht sichtbare Bilder aufschieben 
+	 Wenn Sie nicht sichtbare und versteckte Bilder erst laden lassen, nachdem alle wichtigen Ressourcen geladen wurden, können Sie die Zeit bis zur Interaktivität reduzieren. [Weitere Informationen.](https://web.dev/offscreen-images/) 
 
 render-blocking-resources
 	 Ressourcen beseitigen, die das Rendering blockieren 
+	 Ressourcen blockieren den First Paint Ihrer Seite. Versuchen Sie, wichtiges JS und wichtige CSS inline anzugeben und alle nicht kritischen JS und Stile aufzuschieben. [Weitere Informationen.](https://web.dev/render-blocking-resources/) 
 
 aria-treeitem-name
 	 ARIA `treeitem`-Elemente haben zugängliche Namen 
+	 Wenn ein Element keinen barrierefreien Namen hat, wird es von Screenreadern mit einer allgemeinen Bezeichnung angesagt. Dadurch ist es für Nutzer, die auf Screenreader angewiesen sind, unbrauchbar. [Weitere Informationen](https://web.dev/aria-name/) 
 
 screenshot-thumbnails
 	 Screenshot Thumbnails 
+	 This is what the load of your site looked like. 
 
 installable-manifest
 	 Das Manifest der Web-App oder der Service Worker erfüllt die Anforderungen an die Installierbarkeit nicht 
+	 Der Service Worker ermöglicht es Ihrer App, viele der Funktionen von progressiven Web-Apps zu nutzen, beispielsweise den Offlinemodus, das Hinzufügen zum Startbildschirm und Push-Benachrichtigungen. Bei ordnungsgemäßen Service Worker- und Manifestimplementierungen können Browser Nutzer direkt dazu auffordern, Ihre Web-App zum Startbildschirm hinzuzufügen. Das kann zu mehr Interaktionen führen. [Weitere Informationen](https://web.dev/installable-manifest/) 
 
 label
 	 Formularelemente sind mit Labels verknüpft 
+	 Durch Labels wird gewährleistet, dass Steuerelemente für Formulare von Hilfstechnologien wie Screenreadern richtig angesagt werden. [Weitere Informationen.](https://web.dev/label/) 
 
 charset
 	 Korrekt definierter Zeichensatz 
+	 Eine Zeichencodierungsdeklaration ist erforderlich. Sie kann mit einem `<meta>`-Tag in den ersten 1024 Byte des HTML-Codes oder im HTTP-Antwortheader „Content-Type“ angegeben werden. [Weitere Informationen](https://web.dev/charset/) 
 
 uses-text-compression
 	 Textkomprimierung aktivieren 
+	 Textbasierte Ressourcen sollten mit Komprimierung (gzip, Deflate oder Brotli) ausgeliefert werden, um die Datenmenge im Netzwerk insgesamt zu minimieren. [Weitere Informationen.](https://web.dev/uses-text-compression/) 
 
 splash-screen
 	 Nicht für einen benutzerdefinierten Startbildschirm konfiguriert 
+	 Wenn Sie Ihren Startbildschirm gemäß dem Design Ihrer App gestalten, vermitteln Sie den Nutzern schon beim Ladevorgang einen hochwertigen Eindruck. [Weitere Informationen.](https://web.dev/splash-screen/) 
 
 hreflang
 	 Dokument enthält ein gültiges `hreflang`-Element 
+	 Anhand von "hreflang"-Links können Suchmaschinen ermitteln, welche Version einer Seite sie in den Suchergebnissen für eine bestimmte Sprache oder Region anzeigen sollen. [Weitere Informationen.](https://web.dev/hreflang/) 
 
 redirects
 	 Mehrere Weiterleitungen auf die Seite vermeiden 
+	 Weiterleitungen führen zu zusätzlichen Verzögerungen, bevor die Seite geladen werden kann. [Weitere Informationen.](https://web.dev/redirects/) 
 
 aria-valid-attr-value
 	 `[aria-*]`-Attribute weisen gültige Werte auf 
+	 Hilfstechnologien wie Screenreader können ARIA-Attribute mit ungültigen Werten nicht interpretieren. [Weitere Informationen.](https://web.dev/aria-valid-attr-value/) 
 
 aria-valid-attr
 	 `[aria-*]`-Attribute sind gültig und richtig geschrieben 
+	 Hilfstechnologien wie Screenreader können ARIA-Attribute mit ungültigen Namen nicht interpretieren. [Weitere Informationen.](https://web.dev/aria-valid-attr/) 
 
 definition-list
 	 `<dl>`-Elemente enthalten ausschließlich Gruppen aus `<dt>`- und `<dd>`-Elementen sowie `<script>`-, `<template>`- oder `<div>`-Elemente, die richtig angeordnet sind. 
+	 Wenn Definitionslisten nicht korrekt mit Markup versehen sind, geben Screenreader unter Umständen verwirrende oder falsche Inhalte aus. [Weitere Informationen.](https://web.dev/definition-list/) 
 
 aria-progressbar-name
 	 ARIA `progressbar`-Elemente haben zugängliche Namen 
+	 Wenn ein `progressbar`-Element keinen barrierefreien Namen hat, wird es von Screenreadern mit einer allgemeinen Bezeichnung angesagt. Dadurch ist es für Nutzer, die auf Screenreader angewiesen sind, unbrauchbar. [Weitere Informationen](https://web.dev/aria-name/) 
 
 image-aspect-ratio
 	 Zeigt Bilder mit einem korrekten Seitenverhältnis an 
+	 Die Bildgröße sollte dem natürlichen Seitenverhältnis entsprechen. [Weitere Informationen.](https://web.dev/image-aspect-ratio/) 
 
 offscreen-content-hidden
 	 Offscreen content is hidden from assistive technology 
+	 Offscreen content is hidden with display: none or aria-hidden=true. [Learn more](https://web.dev/offscreen-content-hidden/). 
 
 metrics
 	 Metrics 
+	 Collects all available metrics. 
 
 aria-allowed-attr
 	 `[aria-*]`-Attribute entsprechen ihren Rollen 
+	 Jede ARIA-`role` unterstützt eine bestimmte Auswahl an `aria-*`-Attributen. Wenn sie jedoch falsch zugeordnet sind, werden die `aria-*`-Attribute ungültig. [Weitere Informationen.](https://web.dev/aria-allowed-attr/) 
 
 viewport
 	 Hat ein `<meta name="viewport">`-Tag mit `width` oder `initial-scale` 
+	 Ein `<meta name="viewport">` optimiert Ihre App für Bildschirmgrößen von Mobilgeräten und verhindert darüber hinaus [eine Verzögerung von Nutzereingaben um 300 Millisekunden](https://developers.google.com/web/updates/2013/12/300ms-tap-delay-gone-away). [Weitere Informationen](https://web.dev/viewport/) 
 
 aria-required-parent
 	 `[role]`-Elemente sind ihren jeweils erforderlichen übergeordneten Elementen untergeordnet 
+	 Einige untergeordnete ARIA-Rollen müssen in bestimmten übergeordneten Rollen enthalten sein, damit sie die beabsichtigten Hilfsfunktionen erfüllen können. [Weitere Informationen.](https://web.dev/aria-required-parent/) 
 
 network-server-latency
 	 Server-Back-End-Latenzen 
+	 Serverlatenzen können die Leistung im Web beeinträchtigen. Wenn die Serverlatenz eines Ursprungs hoch ist, weist dies darauf hin, dass der Server überlastet ist oder eine schlechte Back-End-Leistung bietet. [Weitere Informationen.](https://hpbn.co/primer-on-web-performance/#analyzing-the-resource-waterfall) 
 
 mainthread-work-breakdown
 	 Aufwand für Hauptthread minimieren 
+	 Versuchen Sie, die Zeit für das Parsen, Kompilieren und Ausführen von JavaScript zu reduzieren. Die Bereitstellung kleinerer JS-Nutzlasten kann dabei helfen. [Weitere Informationen](https://web.dev/mainthread-work-breakdown/) 
 
 cumulative-layout-shift
 	 Cumulative Layout Shift 
+	 Cumulative Layout Shift misst die Bewegung sichtbarer Elemente innerhalb des Darstellungsbereichs. [Weitere Informationen](https://web.dev/cls/) 
 
 lcp-lazy-loaded
 	 Largest Contentful Paint-Bild wurde nicht mit Lazy Loading geladen 
+	 „Above the fold“-Bilder, die mit Lazy Loading geladen werden, werden später im Lebenszyklus der Seite gerendert. Dies kann zu Verzögerungen beim Largest Contentful Paint führen. [Weitere Informationen](https://web.dev/lcp-lazy-loading/) 
 
 accesskeys
 	 `[accesskey]`-Werte sind eindeutig 
+	 Anhand von Tastenkombinationen können Nutzer schnell einen Bereich der Seite in den Fokus rücken. Damit die Navigation wie vorgesehen funktioniert, muss jede Tastenkombination eindeutig sein. [Weitere Informationen.](https://web.dev/accesskeys/) 
 
 preload-lcp-image
 	 Largest Contentful Paint-Bild vorab laden 
+	 Sie können das vom LCP-Element verwendete Bild vorab laden, um die LCP-Zeit zu verbessern. [Weitere Informationen](https://web.dev/optimize-lcp/#preload-important-resources) 
 
 object-alt
 	 `<object>`-Elemente haben alternativen Text 
+	 Screenreader können lediglich Textinhalte interpretieren. Wenn Sie `<object>`-Elementen alternativen Text hinzufügen, können Screenreader-Nutzer besser verstehen, was diese Elemente darstellen. [Weitere Informationen](https://web.dev/object-alt/) 
 
 csp-xss
 	 Sicherstellen, dass CSP effektiv gegen XSS-Angriffe wirkt 
+	 Eine starke Content Security Policy (CSP) reduziert das Risiko für Cross-Site-Scripting (XSS)-Angriffe erheblich. [Weitere Informationen](https://web.dev/csp-xss/) 
 
 font-size
 	 Dokument enthält gut lesbare Schriftgrößen 
+	 Schriftgrößen von weniger als 12 px sind zu klein und deshalb nicht gut lesbar, sodass Nutzer von Mobilgeräten den Text per Fingerbewegung heranzoomen müssen. Mindestens 60 % des Texts auf der Seite sollten deshalb eine Schriftgröße von mindestens 12 px haben. [Weitere Informationen.](https://web.dev/font-size/) 
 
 network-rtt
 	 Netzwerk-Umlaufzeit 
+	 Die Netzwerk-Umlaufzeit (RTT, Round Trip Time) hat großen Einfluss auf die Leistung. Wenn die RTT zu einem Ursprung hoch ausfällt, weist dies darauf hin, dass die Leistung mit Servern verbessert werden kann, die sich näher beim Nutzer befinden. [Weitere Informationen.](https://hpbn.co/primer-on-latency-and-bandwidth/) 
 
 final-screenshot
 	 Final Screenshot 
+	 The last screenshot captured of the pageload. 
 
 unused-javascript
 	 Reduzieren Sie nicht verwendetes JavaScript 
+	 Sie können nicht verwendetes JavaScript reduzieren und das Laden von Skripts aufschieben, bis sie benötigt werden, um den Datenverbrauch durch Netzwerkaktivität zu senken. [Weitere Informationen](https://web.dev/unused-javascript/) 
 
 uses-responsive-images
 	 Bilder richtig dimensionieren 
+	 Stellen Sie Bilder bereit, die eine angemessene Größe haben, um mobile Daten zu sparen und die Ladezeit zu verbessern. [Weitere Informationen.](https://web.dev/uses-responsive-images/) 
 
 server-response-time
 	 Kurze Erstreaktionszeit des Servers 
+	 Achten Sie auf eine möglichst kurze Serverantwortzeit für das Hauptdokument, weil alle anderen Anfragen davon abhängen. [Weitere Informationen.](https://web.dev/time-to-first-byte/) 
 
 uses-rel-preload
 	 Wichtige Anforderungen vorab laden 
+	 Mit `<link rel=preload>` können Sie das Abrufen von Ressourcen priorisieren, die derzeit beim Seitenaufbau erst später angefordert werden. [Weitere Informationen.](https://web.dev/uses-rel-preload/) 
 
 valid-source-maps
 	 Seite hat gültige Quellzuordnungen 
+	 Quellzuordnungen übersetzen komprimierten Code in den Original-Quellcode. Dies hilft Entwicklern, in der Produktionsphase Fehler zu beheben. Zusätzlich kann Lighthouse weitere Informationen liefern. Wir empfehlen, Quellzuordnungen bereitzustellen, um diese Vorteile zu nutzen. [Weitere Informationen.](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) 
 
 focus-traps
 	 User focus is not accidentally trapped in a region 
+	 A user can tab into and out of any control or region without accidentally trapping their focus. [Learn more](https://web.dev/focus-traps/). 
 
 aria-required-children
 	 Die Elemente mit einer ARIA-`[role]`, deren untergeordnete Elemente eine bestimmte `[role]` enthalten müssen, haben alle erforderlichen untergeordneten Elemente. 
+	 Einige übergeordnete ARIA-Rollen müssen bestimmte untergeordnete Rollen enthalten, damit sie die beabsichtigten Hilfsfunktionen erfüllen können. [Weitere Informationen.](https://web.dev/aria-required-children/) 
 
 themed-omnibox
 	 Legt keine Designfarbe für die Adressleiste fest. 
+	 Die Adressleiste des Browsers kann an das Design Ihrer Website angepasst werden. [Weitere Informationen.](https://web.dev/themed-omnibox/) 
 
 maskable-icon
 	 Das Manifest hat kein maskierbares Symbol 
+	 Mit einem maskierbaren Symbol wird die Bildform beim Installieren der App auf einem Gerät vollständig gefüllt, ohne dass es zu einem Letterbox-Effekt kommt. [Weitere Informationen](https://web.dev/maskable-icon-audit/). 
+
